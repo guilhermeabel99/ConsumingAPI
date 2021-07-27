@@ -1,34 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsumingAPI</title>
+</head>
 <body>
-    <main>
-
-    </main>
-</body>
-
-<script>
-    async function getContent() {
-        try {
-            const response = await fetch('http://localhost:4567');
-            const  data = await response.json();
-
-            console.log(data);
-        } catch (error) {
-            console.error(error)
-        }
-
-    }
-
-    getContent();
-
-    function show(users) {
+    <script>
+        async function getContent() {
+            try {
+                const response = await fetch('http://localhost:4567');
+                const  data = await response.json();
     
-        let output = ''
-
-        for( let of users ) {
-
+                console.log(data);
+            } catch (error) {
+                console.error(error)
+            }
+    
         }
+    
+        getContent();
+    
+        function show(users) {
+        
+            let output = ''
+    
+            for( let of users ) {
+    
+            }
+    
+            document.querySelector('main').innerHTML();
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
 
-        document.querySelector('main').innerHTML();
-    }
 
 
 
@@ -39,6 +58,3 @@
 
 
 
-
-
-</script>
